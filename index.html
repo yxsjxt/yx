@@ -25,29 +25,29 @@ self.location.replace(url);
 window.location.reload();
 }
 }
-setTimeout('refresh()', 1000);
-</script>
-<style type="text/css">
-    #demo {
-        width: 50px;
-        height: 50px;
-        position:absolute;
-        border-radius:110px;
+设置超时时间（'刷新（）'，1000 ）；
+</脚本>
+<样式类型= “text/css” >
+    #演示{
+        宽度：50像素；
+        高度：50像素；
+        位置：绝对；
+        边框半径：110像素；
     }
 </style>
-<script type="text/javascript">
-    window.onload = function(){
-        var demo = document.getElementById('demo');
-        var sx = sy = 15;
-        var x = y = 0;
+>
+    窗口。onload =函数（）{
+        var  demo = document.getElementById ( 'demo ' ) ;
+        var  sx = sy = 15 ;
+        变量 x = y = 0 ;
  
-        function move(){
-            if(document.documentElement.clientWidth - demo.offsetWidth-10 < x || x < 0){
-                sx = -sx;
+        函数 移动（）{
+            如果（ document.documentElement.clientWidth - demo.offsetWidth - 10 < x || x < 0 ）{
+                sx=-sx；
             }
  
-            if(document.documentElement.clientHeight - demo.offsetHeight-10 < y || y < 0){
-                sy = -sy;
+            如果（ document.documentElement.clientHeight - demo.offsetHeight - 10 < y || y < 0 ）{
+                sy=-sy；
             }
  
             x = demo.offsetLeft + sx;
@@ -59,20 +59,20 @@ setTimeout('refresh()', 1000);
  
         var timer = setInterval(move, 100);
  
-        demo.onmouseover = function(){
-            clearInterval(timer);
+        演示。onmouseover =函数（）{
+            清除间隔（计时器）；
         }
  
-        demo.onmouseout = function(){
-            timer = setInterval(move, 100);
+        演示。onmouseout =函数（）{
+            计时器 = setInterval （移动，100 ）；
         }
     }
-</script>
+</脚本>
 
-</head>
+</头>
 
 
-<style type="text/css">
+<样式类型= “text/css” >
 * {
 margin: 0;
 padding: 0;
@@ -205,7 +205,7 @@ img {
     border-radius: 5px;   
 }   
 </style>  
-<img src="static/picture/output.jpg" width="100%"></div><!-- 底部图！ -->
+<img src="output.jpg" width="100%"></div><!-- 底部图！ -->
 <br>
  <!-- 本站由喵星技术支持！ -->
 <script type="text/javascript">
